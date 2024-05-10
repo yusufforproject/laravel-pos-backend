@@ -8,23 +8,23 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="nav-item {{ Request::is('home') ? 'active' : ''}}">
-                <a href="{{ url('home') }}"
+            <li class="nav-item <?php echo e(Request::is('home') ? 'active' : ''); ?>">
+                <a href="<?php echo e(url('home')); ?>"
                     class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
             </li>
             <li class="menu-header">Users</li>
-            <li class="nav-item {{ Request::is('user') ? 'active' : ''}}">
-                <a href="{{ route('user.index') }}"
+            <li class="nav-item <?php echo e(Request::is('user') ? 'active' : ''); ?>">
+                <a href="<?php echo e(route('user.index')); ?>"
                     class="nav-link"><i class="fas fa-users"></i><span>Users</span></a>
             </li>
             <li class="menu-header">Products</li>
-            <li class="nav-item {{ Request::is('product') ? 'active' : ''}}">
-                <a href="{{ route('product.index') }}"
+            <li class="nav-item <?php echo e(Request::is('product') ? 'active' : ''); ?>">
+                <a href="<?php echo e(route('product.index')); ?>"
                     class="nav-link"><i class="fas fa-lemon"></i><span>Products</span></a>
             </li>
             <li class="menu-header">Orders</li>
-            <li class="nav-item {{ Request::is('order') ? 'active' : ''}}">
-                <a href="{{ route('order.index') }}"
+            <li class="nav-item <?php echo e(Request::is('order') ? 'active' : ''); ?>">
+                <a href="<?php echo e(route('order.index')); ?>"
                     class="nav-link"><i class="fas fa-cart-plus"></i><span>Orders</span></a>
             </li>
         </ul>
@@ -38,3 +38,4 @@
         </div>
     </aside>
 </div>
+<?php /**PATH D:\Project\Laravel\laravel-pos-backend\resources\views/components/sidebar.blade.php ENDPATH**/ ?>
